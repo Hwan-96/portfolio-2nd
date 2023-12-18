@@ -1,0 +1,238 @@
+@font-face {
+  font-family: 'LotteriaChab';
+  font-weight: normal;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/LotteriaChab/LotteriaChab.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/LotteriaChab/LotteriaChab.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/LotteriaChab/LotteriaChab.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/LotteriaChab/LotteriaChab.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/LotteriaChab/LotteriaChab.ttf') format("truetype");
+  font-display: swap;
+}
+
+body, html {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  height: 100%;
+  background: #fff7e5;
+  font-family: 'SUIT', sans-serif;
+  color: #333;
+}
+.swiper-container {
+  width: 100%;
+  height: 300px;
+  margin: 50px auto;
+}
+.swiper-slide {
+  text-align: center;
+}
+
+.swiper{
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+/* PC - 1280px */
+/* Header-------------------------------------- */
+header{
+  border: 1px solid #000;
+}
+
+header ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1280px;
+  height: 78px;
+  margin: auto;
+}
+
+header ul li{
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+header ul li a{
+  margin: 120px;
+}
+
+header ul li img{
+  width: 100px;
+}
+
+
+#SwiperSection{
+  margin-top: 50px;
+  width: 100vw;
+}
+
+.swiper-slide{
+  overflow: hidden;
+  height: 450px;
+  position: relative;
+}
+.swiper-slide img{
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  object-position: center;
+}
+.swiper-slide a{
+  background: #000;
+  color: #f1f1f1;
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0;
+  transition: .3s;
+}
+
+.swiper-slide:hover a{
+  opacity: 1;
+}
+.swiper-slide a:hover{
+  transform: translate(-50%,-50%) scale(1.2);
+}
+
+.swiper-slide ul{
+  position: absolute;
+  bottom: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-transform: capitalize;
+  width: 100%;
+}
+
+.swiper-slide ul li{
+  font-size: 18px;
+  background: #000;
+  color: #fff;
+  padding: 4px 16px 4px 16px;
+  border-radius: 50px;
+}
+
+.swiper-pagination-bullet{
+  width: 100%;
+  height: 4px;
+  border-radius: 0;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+  display: flex;
+}
+
+.swiper-pagination-bullet-active{
+  background: blueviolet;
+}
+
+/* Main --------------------------------------- */
+main{
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+}
+
+h5{
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+#sec1{
+  border-bottom: 1px solid #000;
+  margin: 30px 0 30px 0;
+}
+
+#sec1 .title{
+  /* border: 1px solid #000; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sec1 .title h2{
+  font-size: 9.2rem;
+  text-transform: uppercase;
+  font-family: 'LotteriaChab';
+  font-weight: normal;
+}
+#sec1 .title p{
+  padding: 20px;
+}
+
+#sec1 .title2 h2{
+  font-size: 9.2rem;
+  text-transform: uppercase;
+  font-family: 'LotteriaChab';
+  font-weight: normal;
+  /* border: 1px solid #000; */
+}
+
+#sec2,
+#sec3{
+  border-bottom: 1px solid #000;
+  margin: 30px 0 30px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#sec2 h5,
+#sec3 h5{
+  width: 47%;
+}
+
+#sec2 ul,
+#sec3 ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 53%;
+}
+
+#sec2 ul li{
+  margin: 10px;
+}
+
+#sec3 ul li{
+  border-bottom: 1px solid #000;
+  line-height: 35px;
+  padding: 30px 0 10px 0;
+}
+
+#sec3 ul li span{
+  color: blue;
+}
+
+#sec3 ul li:first-child{
+  padding-top: 0;
+}
+#sec3 ul li:last-child{
+  padding-bottom: 30px;
+  border: none;
+}
+
+#sec4 .contect-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+}
+#sec4 .contect-list li {
+  flex: 1;
+  margin-bottom: 7px;
+}
+#sec4 .contect-list li strong{
+  font-size: 20px;
+  text-transform: uppercase;
+}
